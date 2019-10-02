@@ -1,0 +1,31 @@
+<h1>CREATE</h1>
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <table border=1>
+        <tr>
+            <td>Product Name:</td>
+            <td><input type="text" formControlName="product"></td>
+        </tr>
+        <tr>
+            <td>Code:</td>
+            <td><input type="text" formControlName="code"></td>
+        </tr>
+        <tr>
+            <td>Available:</td>
+            <td><input type="text" formControlName="available"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td> <input type="text" formControlName="price"></td>
+        </tr>
+        <tr>
+            <td>Rating:</td>
+            <td><input type="text" formControlName="rating"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <button type="submit" [disabled]="!productForm.valid">Submit</button></td>
+        </tr>
+    </table>
+
+</form>

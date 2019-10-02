@@ -1,0 +1,19 @@
+<h1>PRODUCT LIST</h1>
+<table border="1" [cellPadding]="5">
+    <tr>
+        <td>Name</td>
+        <td>Code</td>
+        <td>Date</td>
+        <td>Price</td>
+        <td>Rating</td>
+    </tr>
+    <tr *ngFor="let item of product">
+        <td>{{item.product}}</td>
+        <td>{{item.code}} </td>
+        <td>{{item.available}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.rating}}</td>
+    </tr>
+</table>
+<br>
+<router-outlet></router-outlet>
